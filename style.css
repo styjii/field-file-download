@@ -1,0 +1,63 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: monospace, arial, sans-serif;
+    background: #0c0f30;
+}
+.container {
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    padding-top: 50px;
+    margin: 0 auto;
+}
+input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1em;
+    border: 0;
+    border-radius: 5px;
+    background: #bdc1eb;
+    color: #21212e;
+    padding: 10px;
+    margin: 0;
+    outline: none;
+}
+button {
+    display: block;
+    font-size: 1em;
+    border: 0;
+    border-radius: 10px;
+    background: #1005ad;
+    color: #f8f1f1;
+    padding: 10px 20px;
+    margin: 30px auto 0 auto;
+}
+button:hover {
+    background: #6e02e9;
+}
+.messageErr {
+    display: none;
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    box-sizing: border-box;
+    color: rgb(218, 51, 51);
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+    animation-name: mv;
+    animation-duration: .5s;
+    animation-timing-function: ease;
+    position: absolute;
+}
+@keyframes mv {
+    0% { transform: rotate(10deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-10deg); }
+    100% { transform: rotate(-5deg); }
+}
